@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhà Hàng Quán ăn BA MIỀN"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Food Item 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+        <CheckBox android:id="@+id/cbPho" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phở bò" />
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50,000 VND" />
+        <EditText android:id="@+id/edtQtyPho" android:layout_width="50dp" android:layout_height="wrap_content" android:hint="SL" android:inputType="number" android:text="1" />
+    </LinearLayout>
+
+    <!-- Food Item 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+        <CheckBox android:id="@+id/cbBun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bún chả" />
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="45,000 VND" />
+        <EditText android:id="@+id/edtQtyBun" android:layout_width="50dp" android:layout_height="wrap_content" android:hint="SL" android:inputType="number" android:text="1" />
+    </LinearLayout>
+
+    <!-- Food Item 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+        <CheckBox android:id="@+id/cbCom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cơm gà" />
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="60,000 VND" />
+        <EditText android:id="@+id/edtQtyCom" android:layout_width="50dp" android:layout_height="wrap_content" android:hint="SL" android:inputType="number" android:text="1" />
+    </LinearLayout>
+
+    <!-- Food Item 4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+        <CheckBox android:id="@+id/cbNem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nem rán" />
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="35,000 VND" />
+        <EditText android:id="@+id/edtQtyNem" android:layout_width="50dp" android:layout_height="wrap_content" android:hint="SL" android:inputType="number" android:text="1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tính tiền" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền: 0 VND"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

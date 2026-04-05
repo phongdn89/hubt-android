@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#81C784"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTieuDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHƯƠNG TRÌNH PHÉP TOÁN 2 SỐ"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edtNhapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số a"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtNhapb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số b"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnCong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:backgroundTint="#42a5f5"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnNhan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="*"
+            android:backgroundTint="#ffee58"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnTru"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:backgroundTint="#ff7043"
+            android:onClick="xulyTru"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnChia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:onClick="xulyChia"
+            android:backgroundTint="#66bb6a"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtKQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết quả"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnMoBai2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mở Bài 2 (PT Bậc 1)"
+        android:backgroundTint="#FF9800"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnMoBai3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mở Bài 3 (PT Bậc 2)"
+        android:backgroundTint="#9C27B0"/>
+
+</LinearLayout>
