@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Background for 'Waka Waka' (World Cup 2010 style) -->
+    <path
+        android:fillColor="#FFD600"
+        android:pathData="M0,0h200v200h-200z" />
+    <!-- Green and Red stripes -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M0,0l200,200v-50l-200,-200z" />
+    <path
+        android:fillColor="#F44336"
+        android:pathData="M200,0l-200,200h50l150,-150z" />
+    <!-- Soccer ball representation -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M100,100m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M100,100m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0M100,70l8,5l-3,9l-10,0l-3,-9zM100,130l-8,-5l3,-9l10,0l3,9z" />
+</vector>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Background for 'Love Story' -->
+    <path
+        android:fillColor="#FCE4EC"
+        android:pathData="M0,0h200v200h-200z" />
+    <!-- Heart shape -->
+    <path
+        android:fillColor="#F06292"
+        android:pathData="M100,160l-12,-11c-42,-38 -70,-63 -70,-94c0,-25 20,-45 45,-45c14,0 28,6 37,17c9,-11 23,-17 37,-17c25,0 45,20 45,45c0,31 -28,56 -70,94l-12,11z" />
+    <!-- Music note -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M110,60v40c0,5 -5,10 -10,10s-10,-5 -10,-10s5,-10 10,-10v-30h20v10h-10z" />
+</vector>

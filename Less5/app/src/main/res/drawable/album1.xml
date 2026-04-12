@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <!-- Background for 'Góc tối' (Dark Corner) -->
+    <path
+        android:fillColor="#121212"
+        android:pathData="M0,0h200v200h-200z" />
+    <!-- A spotlight/gradient effect -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M100,100m-70,0a70,70 0,1 1,140 0a70,70 0,1 1,-140 0" />
+    <!-- Abstract representation of a person/silhouette -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M100,70m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M100,90c-20,0 -35,15 -35,35v15h70v-15c0,-20 -15,-35 -35,-35z" />
+</vector>

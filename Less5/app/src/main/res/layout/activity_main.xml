@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audio Player"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/ivAlbum"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        android:elevation="4dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tvSongTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên bài hát"
+        android:textSize="20sp"
+        android:textColor="#555"
+        android:layout_marginBottom="10dp"/>
+
+    <Spinner
+        android:id="@+id/spSongs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"/>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@android:drawable/ic_media_previous"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@android:drawable/ic_media_play"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@android:drawable/ic_media_pause"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@android:drawable/ic_media_next" />
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/swRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lặp lại (Repeat) "
+        android:textSize="16sp"/>
+
+</LinearLayout>
